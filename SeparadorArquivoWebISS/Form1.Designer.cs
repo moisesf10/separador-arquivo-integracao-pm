@@ -28,11 +28,9 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.WindowState = FormWindowState.Maximized;
 			menuStrip1 = new MenuStrip();
 			menuToolStripMenuItem = new ToolStripMenuItem();
 			menuDesmembrarArquivoEmLotesToolStripMenuItem = new ToolStripMenuItem();
-			menuSepararGuiaToolStripMenuItem = new ToolStripMenuItem();
 			menuStrip1.SuspendLayout();
 			SuspendLayout();
 			// 
@@ -48,7 +46,7 @@
 			// 
 			// menuToolStripMenuItem
 			// 
-			menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuDesmembrarArquivoEmLotesToolStripMenuItem, menuSepararGuiaToolStripMenuItem });
+			menuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { menuDesmembrarArquivoEmLotesToolStripMenuItem });
 			menuToolStripMenuItem.Name = "menuToolStripMenuItem";
 			menuToolStripMenuItem.Size = new Size(60, 24);
 			menuToolStripMenuItem.Text = "Menu";
@@ -60,12 +58,6 @@
 			menuDesmembrarArquivoEmLotesToolStripMenuItem.Text = "Desmembrar Arquivo Em Lotes";
 			menuDesmembrarArquivoEmLotesToolStripMenuItem.Click += cortarArquivoEmLotesToolStripMenuItem_Click;
 			// 
-			// menuSepararGuiaToolStripMenuItem
-			// 
-			menuSepararGuiaToolStripMenuItem.Name = "menuSepararGuiaToolStripMenuItem";
-			menuSepararGuiaToolStripMenuItem.Size = new Size(298, 26);
-			menuSepararGuiaToolStripMenuItem.Text = "Separar Guia";
-			// 
 			// FrmPrincipal
 			// 
 			AutoScaleDimensions = new SizeF(8F, 20F);
@@ -76,6 +68,7 @@
 			MainMenuStrip = menuStrip1;
 			Name = "FrmPrincipal";
 			Text = "Separador de Arquivos";
+			WindowState = FormWindowState.Maximized;
 			menuStrip1.ResumeLayout(false);
 			menuStrip1.PerformLayout();
 			ResumeLayout(false);
@@ -87,6 +80,5 @@
 		private MenuStrip menuStrip1;
 		private ToolStripMenuItem menuToolStripMenuItem;
 		private ToolStripMenuItem menuDesmembrarArquivoEmLotesToolStripMenuItem;
-		private ToolStripMenuItem menuSepararGuiaToolStripMenuItem;
 	}
 }
